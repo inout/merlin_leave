@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 1
+  time_in: 2012-07-15 11:24:43
+  time_out: 2012-07-15 11:24:43
+
+two:
+  user_id: 1
+  time_in: 2012-07-15 11:24:43
+  time_out: 2012-07-15 11:24:43

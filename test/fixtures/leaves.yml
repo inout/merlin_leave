@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  requestor_id: 1
+  leave_type: MyString
+  approver_id: 1
+  leave_notes: MyText
+  requested_on: 2012-07-15 11:24:46
+  approved_on: 2012-07-15 11:24:46
+
+two:
+  requestor_id: 1
+  leave_type: MyString
+  approver_id: 1
+  leave_notes: MyText
+  requested_on: 2012-07-15 11:24:46
+  approved_on: 2012-07-15 11:24:46

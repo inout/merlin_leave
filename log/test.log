@@ -1,0 +1,798 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (23.3ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Wed, 18 Jul 2012 14:08:44 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Wed, 18 Jul 2012 14:08:44 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 18 Jul 2012 14:08:44 UTC +00:00], ["time_in", Tue, 17 Jul 2012 14:08:44 UTC +00:00], ["time_out", nil], ["updated_at", Wed, 18 Jul 2012 14:08:44 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 18 Jul 2012 14:08:44 UTC +00:00], ["time_in", Wed, 18 Jul 2012 14:08:44 UTC +00:00], ["time_out", nil], ["updated_at", Wed, 18 Jul 2012 14:08:44 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-18 14:08:44.381160' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (25.8ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Wed, 18 Jul 2012 16:26:46 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Wed, 18 Jul 2012 16:26:46 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (10.4ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 18 Jul 2012 16:26:46 UTC +00:00], ["time_in", Tue, 17 Jul 2012 16:26:46 UTC +00:00], ["time_out", nil], ["updated_at", Wed, 18 Jul 2012 16:26:46 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 18 Jul 2012 16:26:46 UTC +00:00], ["time_in", Wed, 18 Jul 2012 16:26:46 UTC +00:00], ["time_out", nil], ["updated_at", Wed, 18 Jul 2012 16:26:46 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-18 16:26:46.382675' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (8.2ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Wed, 18 Jul 2012 16:55:49 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Wed, 18 Jul 2012 16:55:49 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (3.7ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 18 Jul 2012 16:55:49 UTC +00:00], ["time_in", Tue, 17 Jul 2012 16:55:49 UTC +00:00], ["time_out", nil], ["updated_at", Wed, 18 Jul 2012 16:55:49 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 18 Jul 2012 16:55:49 UTC +00:00], ["time_in", Wed, 18 Jul 2012 16:55:49 UTC +00:00], ["time_out", nil], ["updated_at", Wed, 18 Jul 2012 16:55:49 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-18 16:55:49.676403' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (39.8ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Thu, 19 Jul 2012 02:52:37 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Thu, 19 Jul 2012 02:52:37 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 19 Jul 2012 02:52:38 UTC +00:00], ["time_in", Wed, 18 Jul 2012 02:52:38 UTC +00:00], ["time_out", nil], ["updated_at", Thu, 19 Jul 2012 02:52:38 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 19 Jul 2012 02:52:38 UTC +00:00], ["time_in", Thu, 19 Jul 2012 02:52:38 UTC +00:00], ["time_out", nil], ["updated_at", Thu, 19 Jul 2012 02:52:38 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-19 02:52:38.061567' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (33.6ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Sat, 21 Jul 2012 08:18:22 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Sat, 21 Jul 2012 08:18:22 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 21 Jul 2012 08:18:22 UTC +00:00], ["time_in", Fri, 20 Jul 2012 08:18:22 UTC +00:00], ["time_out", nil], ["updated_at", Sat, 21 Jul 2012 08:18:22 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 21 Jul 2012 08:18:22 UTC +00:00], ["time_in", Sat, 21 Jul 2012 08:18:22 UTC +00:00], ["time_out", nil], ["updated_at", Sat, 21 Jul 2012 08:18:22 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-21 08:18:22.839866' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (64.0ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Tue, 24 Jul 2012 03:09:58 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Tue, 24 Jul 2012 03:09:58 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Jul 2012 03:09:58 UTC +00:00], ["time_in", Mon, 23 Jul 2012 03:09:58 UTC +00:00], ["time_out", nil], ["updated_at", Tue, 24 Jul 2012 03:09:58 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Jul 2012 03:09:58 UTC +00:00], ["time_in", Tue, 24 Jul 2012 03:09:58 UTC +00:00], ["time_out", nil], ["updated_at", Tue, 24 Jul 2012 03:09:58 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-24 03:09:58.319081' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Tue, 24 Jul 2012 03:09:58 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Tue, 24 Jul 2012 03:09:58 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Jul 2012 03:09:58 UTC +00:00], ["time_in", Mon, 23 Jul 2012 03:09:58 UTC +00:00], ["time_out", Mon, 23 Jul 2012 11:09:58 UTC +00:00], ["updated_at", Tue, 24 Jul 2012 03:09:58 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Jul 2012 03:09:58 UTC +00:00], ["time_in", Tue, 24 Jul 2012 03:09:58 UTC +00:00], ["time_out", nil], ["updated_at", Tue, 24 Jul 2012 03:09:58 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-24 03:09:58.319081' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (43.4ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Tue, 24 Jul 2012 03:15:52 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Tue, 24 Jul 2012 03:15:52 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Jul 2012 03:15:53 UTC +00:00], ["time_in", Mon, 23 Jul 2012 03:15:52 UTC +00:00], ["time_out", nil], ["updated_at", Tue, 24 Jul 2012 03:15:53 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Jul 2012 03:15:53 UTC +00:00], ["time_in", Tue, 24 Jul 2012 03:15:53 UTC +00:00], ["time_out", nil], ["updated_at", Tue, 24 Jul 2012 03:15:53 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-24 03:15:53.011421' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Tue, 24 Jul 2012 03:15:53 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Tue, 24 Jul 2012 03:15:53 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Jul 2012 03:15:53 UTC +00:00], ["time_in", Mon, 23 Jul 2012 03:15:53 UTC +00:00], ["time_out", Mon, 23 Jul 2012 11:15:53 UTC +00:00], ["updated_at", Tue, 24 Jul 2012 03:15:53 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Jul 2012 03:15:53 UTC +00:00], ["time_in", Tue, 24 Jul 2012 03:15:53 UTC +00:00], ["time_out", nil], ["updated_at", Tue, 24 Jul 2012 03:15:53 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-24 03:15:53.011421' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (43.9ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Tue, 24 Jul 2012 03:17:45 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Tue, 24 Jul 2012 03:17:45 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Jul 2012 03:17:45 UTC +00:00], ["time_in", Mon, 23 Jul 2012 03:17:45 UTC +00:00], ["time_out", nil], ["updated_at", Tue, 24 Jul 2012 03:17:45 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Jul 2012 03:17:45 UTC +00:00], ["time_in", Tue, 24 Jul 2012 03:17:45 UTC +00:00], ["time_out", nil], ["updated_at", Tue, 24 Jul 2012 03:17:45 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-24 03:17:45.304208' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Tue, 24 Jul 2012 03:17:45 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Tue, 24 Jul 2012 03:17:45 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Jul 2012 03:17:45 UTC +00:00], ["time_in", Mon, 23 Jul 2012 03:17:45 UTC +00:00], ["time_out", Mon, 23 Jul 2012 11:17:45 UTC +00:00], ["updated_at", Tue, 24 Jul 2012 03:17:45 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Jul 2012 03:17:45 UTC +00:00], ["time_in", Tue, 24 Jul 2012 03:17:45 UTC +00:00], ["time_out", nil], ["updated_at", Tue, 24 Jul 2012 03:17:45 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-24 03:17:45.304208' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (42.9ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Tue, 24 Jul 2012 03:18:03 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Tue, 24 Jul 2012 03:18:03 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Jul 2012 03:18:03 UTC +00:00], ["time_in", Mon, 23 Jul 2012 03:18:03 UTC +00:00], ["time_out", nil], ["updated_at", Tue, 24 Jul 2012 03:18:03 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Jul 2012 03:18:03 UTC +00:00], ["time_in", Tue, 24 Jul 2012 03:18:03 UTC +00:00], ["time_out", nil], ["updated_at", Tue, 24 Jul 2012 03:18:03 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-24 03:18:03.845544' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Tue, 24 Jul 2012 03:18:03 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Tue, 24 Jul 2012 03:18:03 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Jul 2012 03:18:03 UTC +00:00], ["time_in", Mon, 23 Jul 2012 03:18:03 UTC +00:00], ["time_out", Mon, 23 Jul 2012 11:18:03 UTC +00:00], ["updated_at", Tue, 24 Jul 2012 03:18:03 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Jul 2012 03:18:03 UTC +00:00], ["time_in", Tue, 24 Jul 2012 03:18:03 UTC +00:00], ["time_out", nil], ["updated_at", Tue, 24 Jul 2012 03:18:03 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-24 03:18:03.845544' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (44.4ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Tue, 24 Jul 2012 03:24:02 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Tue, 24 Jul 2012 03:24:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Jul 2012 03:24:02 UTC +00:00], ["time_in", Mon, 23 Jul 2012 03:24:02 UTC +00:00], ["time_out", nil], ["updated_at", Tue, 24 Jul 2012 03:24:02 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Jul 2012 03:24:02 UTC +00:00], ["time_in", Tue, 24 Jul 2012 03:24:02 UTC +00:00], ["time_out", nil], ["updated_at", Tue, 24 Jul 2012 03:24:02 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-24 03:24:02.199206' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Tue, 24 Jul 2012 03:24:02 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Tue, 24 Jul 2012 03:24:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Jul 2012 03:24:02 UTC +00:00], ["time_in", Mon, 23 Jul 2012 03:24:02 UTC +00:00], ["time_out", Mon, 23 Jul 2012 11:24:02 UTC +00:00], ["updated_at", Tue, 24 Jul 2012 03:24:02 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Jul 2012 03:24:02 UTC +00:00], ["time_in", Tue, 24 Jul 2012 03:24:02 UTC +00:00], ["time_out", nil], ["updated_at", Tue, 24 Jul 2012 03:24:02 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-24 03:24:02.199206' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (136.9ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Thu, 26 Jul 2012 16:13:58 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Thu, 26 Jul 2012 16:13:58 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (22.8ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 26 Jul 2012 16:13:58 UTC +00:00], ["time_in", Wed, 25 Jul 2012 16:13:58 UTC +00:00], ["time_out", nil], ["updated_at", Thu, 26 Jul 2012 16:13:58 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 26 Jul 2012 16:13:58 UTC +00:00], ["time_in", Thu, 26 Jul 2012 16:13:58 UTC +00:00], ["time_out", nil], ["updated_at", Thu, 26 Jul 2012 16:13:58 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-26 16:13:58.778211' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Thu, 26 Jul 2012 16:13:58 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Thu, 26 Jul 2012 16:13:58 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 26 Jul 2012 16:13:58 UTC +00:00], ["time_in", Wed, 25 Jul 2012 16:13:58 UTC +00:00], ["time_out", Thu, 26 Jul 2012 00:13:58 UTC +00:00], ["updated_at", Thu, 26 Jul 2012 16:13:58 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 26 Jul 2012 16:13:58 UTC +00:00], ["time_in", Thu, 26 Jul 2012 16:13:58 UTC +00:00], ["time_out", nil], ["updated_at", Thu, 26 Jul 2012 16:13:58 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-26 16:13:58.778211' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (64.1ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Fri, 27 Jul 2012 02:01:32 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 27 Jul 2012 02:01:32 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 02:01:32 UTC +00:00], ["time_in", Thu, 26 Jul 2012 02:01:32 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 02:01:32 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 02:01:32 UTC +00:00], ["time_in", Fri, 27 Jul 2012 02:01:32 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 02:01:32 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-27 02:01:32.958995' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Fri, 27 Jul 2012 02:01:32 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 27 Jul 2012 02:01:32 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 02:01:32 UTC +00:00], ["time_in", Thu, 26 Jul 2012 02:01:32 UTC +00:00], ["time_out", Thu, 26 Jul 2012 10:01:32 UTC +00:00], ["updated_at", Fri, 27 Jul 2012 02:01:32 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 02:01:32 UTC +00:00], ["time_in", Fri, 27 Jul 2012 02:01:32 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 02:01:32 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-27 02:01:32.958995' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (44.2ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Fri, 27 Jul 2012 02:08:26 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 27 Jul 2012 02:08:26 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 02:08:26 UTC +00:00], ["time_in", Thu, 26 Jul 2012 02:08:26 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 02:08:26 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 02:08:26 UTC +00:00], ["time_in", Fri, 27 Jul 2012 02:08:26 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 02:08:26 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-27 02:08:26.861444' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Fri, 27 Jul 2012 02:08:26 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 27 Jul 2012 02:08:26 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 02:08:26 UTC +00:00], ["time_in", Thu, 26 Jul 2012 02:08:26 UTC +00:00], ["time_out", Thu, 26 Jul 2012 10:08:26 UTC +00:00], ["updated_at", Fri, 27 Jul 2012 02:08:26 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 02:08:26 UTC +00:00], ["time_in", Fri, 27 Jul 2012 02:08:26 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 02:08:26 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-27 02:08:26.861444' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (60.8ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "id", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Fri, 27 Jul 2012 02:11:31 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["id", 1], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 27 Jul 2012 02:11:31 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 02:11:32 UTC +00:00], ["time_in", Thu, 26 Jul 2012 02:11:32 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 02:11:32 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 02:11:32 UTC +00:00], ["time_in", Fri, 27 Jul 2012 02:11:32 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 02:11:32 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-27 02:11:32.046857' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "id", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Fri, 27 Jul 2012 02:11:32 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["id", 1], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 27 Jul 2012 02:11:32 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 02:11:32 UTC +00:00], ["time_in", Thu, 26 Jul 2012 02:11:32 UTC +00:00], ["time_out", Thu, 26 Jul 2012 10:11:32 UTC +00:00], ["updated_at", Fri, 27 Jul 2012 02:11:32 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 02:11:32 UTC +00:00], ["time_in", Fri, 27 Jul 2012 02:11:32 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 02:11:32 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-27 02:11:32.046857' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (56.3ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "id", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Fri, 27 Jul 2012 02:12:36 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["id", 1], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 27 Jul 2012 02:12:36 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 02:12:36 UTC +00:00], ["time_in", Thu, 26 Jul 2012 02:12:36 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 02:12:36 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 02:12:36 UTC +00:00], ["time_in", Fri, 27 Jul 2012 02:12:36 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 02:12:36 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-27 02:12:36.354136' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "id", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Fri, 27 Jul 2012 02:12:36 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["id", 1], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 27 Jul 2012 02:12:36 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 02:12:36 UTC +00:00], ["time_in", Thu, 26 Jul 2012 02:12:36 UTC +00:00], ["time_out", Thu, 26 Jul 2012 10:12:36 UTC +00:00], ["updated_at", Fri, 27 Jul 2012 02:12:36 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 02:12:36 UTC +00:00], ["time_in", Fri, 27 Jul 2012 02:12:36 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 02:12:36 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-27 02:12:36.354136' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (59.4ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "id", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Fri, 27 Jul 2012 02:13:05 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["id", 1], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 27 Jul 2012 02:13:05 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 02:13:05 UTC +00:00], ["time_in", Thu, 26 Jul 2012 02:13:05 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 02:13:05 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 02:13:05 UTC +00:00], ["time_in", Fri, 27 Jul 2012 02:13:05 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 02:13:05 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-27 02:13:05.362542' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "id", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Fri, 27 Jul 2012 02:13:05 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["id", 1], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 27 Jul 2012 02:13:05 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 02:13:05 UTC +00:00], ["time_in", Thu, 26 Jul 2012 02:13:05 UTC +00:00], ["time_out", Thu, 26 Jul 2012 10:13:05 UTC +00:00], ["updated_at", Fri, 27 Jul 2012 02:13:05 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 02:13:05 UTC +00:00], ["time_in", Fri, 27 Jul 2012 02:13:05 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 02:13:05 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-27 02:13:05.362542' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (44.5ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "id", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Fri, 27 Jul 2012 03:33:26 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["id", 1], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 27 Jul 2012 03:33:26 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 03:33:26 UTC +00:00], ["time_in", Thu, 26 Jul 2012 03:33:26 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 03:33:26 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 03:33:26 UTC +00:00], ["time_in", Fri, 27 Jul 2012 03:33:26 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 03:33:26 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-27 03:33:26.529316' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "id", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Fri, 27 Jul 2012 03:33:26 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["id", 1], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 27 Jul 2012 03:33:26 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 03:33:26 UTC +00:00], ["time_in", Thu, 26 Jul 2012 03:33:26 UTC +00:00], ["time_out", Thu, 26 Jul 2012 11:33:26 UTC +00:00], ["updated_at", Fri, 27 Jul 2012 03:33:26 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 03:33:26 UTC +00:00], ["time_in", Fri, 27 Jul 2012 03:33:26 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 03:33:26 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-27 03:33:26.529316' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (56.0ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "id", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Fri, 27 Jul 2012 03:36:07 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["id", 1], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 27 Jul 2012 03:36:07 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 03:36:08 UTC +00:00], ["time_in", Thu, 26 Jul 2012 03:36:07 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 03:36:08 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 03:36:08 UTC +00:00], ["time_in", Fri, 27 Jul 2012 03:36:08 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 03:36:08 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-27 03:36:08.003506' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "id", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Fri, 27 Jul 2012 03:36:08 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["id", 1], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 27 Jul 2012 03:36:08 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 03:36:08 UTC +00:00], ["time_in", Thu, 26 Jul 2012 03:36:08 UTC +00:00], ["time_out", Thu, 26 Jul 2012 11:36:08 UTC +00:00], ["updated_at", Fri, 27 Jul 2012 03:36:08 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 03:36:08 UTC +00:00], ["time_in", Fri, 27 Jul 2012 03:36:08 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 03:36:08 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-27 03:36:08.003506' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (57.4ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Fri, 27 Jul 2012 03:37:27 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 27 Jul 2012 03:37:27 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 03:37:27 UTC +00:00], ["time_in", Thu, 26 Jul 2012 03:37:27 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 03:37:27 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 03:37:27 UTC +00:00], ["time_in", Fri, 27 Jul 2012 03:37:27 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 03:37:27 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-27 03:37:27.829496' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Fri, 27 Jul 2012 03:37:27 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 27 Jul 2012 03:37:27 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 03:37:27 UTC +00:00], ["time_in", Thu, 26 Jul 2012 03:37:27 UTC +00:00], ["time_out", Thu, 26 Jul 2012 11:37:27 UTC +00:00], ["updated_at", Fri, 27 Jul 2012 03:37:27 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 03:37:27 UTC +00:00], ["time_in", Fri, 27 Jul 2012 03:37:27 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 03:37:27 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-27 03:37:27.829496' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (56.4ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Fri, 27 Jul 2012 03:38:05 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 27 Jul 2012 03:38:05 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 03:38:06 UTC +00:00], ["time_in", Thu, 26 Jul 2012 03:38:05 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 03:38:06 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 03:38:06 UTC +00:00], ["time_in", Fri, 27 Jul 2012 03:38:06 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 03:38:06 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-27 03:38:06.014178' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Fri, 27 Jul 2012 03:38:06 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 27 Jul 2012 03:38:06 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 03:38:06 UTC +00:00], ["time_in", Thu, 26 Jul 2012 03:38:06 UTC +00:00], ["time_out", Thu, 26 Jul 2012 11:38:06 UTC +00:00], ["updated_at", Fri, 27 Jul 2012 03:38:06 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 03:38:06 UTC +00:00], ["time_in", Fri, 27 Jul 2012 03:38:06 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 03:38:06 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-27 03:38:06.014178' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (40.8ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Fri, 27 Jul 2012 03:55:03 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 27 Jul 2012 03:55:03 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 03:55:03 UTC +00:00], ["time_in", Thu, 26 Jul 2012 03:55:03 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 03:55:03 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 03:55:03 UTC +00:00], ["time_in", Fri, 27 Jul 2012 03:55:03 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 03:55:03 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-27 03:55:03.429727' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Fri, 27 Jul 2012 03:55:03 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 27 Jul 2012 03:55:03 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 03:55:03 UTC +00:00], ["time_in", Thu, 26 Jul 2012 03:55:03 UTC +00:00], ["time_out", Thu, 26 Jul 2012 11:55:03 UTC +00:00], ["updated_at", Fri, 27 Jul 2012 03:55:03 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 03:55:03 UTC +00:00], ["time_in", Fri, 27 Jul 2012 03:55:03 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 03:55:03 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-27 03:55:03.429727' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."email" = 'test@user.one' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'test@user.one' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (84.4ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Fri, 27 Jul 2012 03:56:54 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 27 Jul 2012 03:56:54 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 03:56:55 UTC +00:00], ["time_in", Thu, 26 Jul 2012 03:56:55 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 03:56:55 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 03:56:55 UTC +00:00], ["time_in", Fri, 27 Jul 2012 03:56:55 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 03:56:55 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-27 03:56:55.086476' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Fri, 27 Jul 2012 03:56:55 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 27 Jul 2012 03:56:55 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 03:56:55 UTC +00:00], ["time_in", Thu, 26 Jul 2012 03:56:55 UTC +00:00], ["time_out", Thu, 26 Jul 2012 11:56:55 UTC +00:00], ["updated_at", Fri, 27 Jul 2012 03:56:55 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 03:56:55 UTC +00:00], ["time_in", Fri, 27 Jul 2012 03:56:55 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 03:56:55 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-27 03:56:55.086476' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (73.5ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Fri, 27 Jul 2012 06:35:09 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 27 Jul 2012 06:35:09 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 06:35:09 UTC +00:00], ["time_in", Thu, 26 Jul 2012 06:35:09 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 06:35:09 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 06:35:09 UTC +00:00], ["time_in", Fri, 27 Jul 2012 06:35:09 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 06:35:09 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-27 06:35:09.595309' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Fri, 27 Jul 2012 06:35:09 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 27 Jul 2012 06:35:09 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 06:35:09 UTC +00:00], ["time_in", Thu, 26 Jul 2012 06:35:09 UTC +00:00], ["time_out", Thu, 26 Jul 2012 14:35:09 UTC +00:00], ["updated_at", Fri, 27 Jul 2012 06:35:09 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 27 Jul 2012 06:35:09 UTC +00:00], ["time_in", Fri, 27 Jul 2012 06:35:09 UTC +00:00], ["time_out", nil], ["updated_at", Fri, 27 Jul 2012 06:35:09 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-27 06:35:09.595309' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (152.5ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Sat, 28 Jul 2012 10:03:11 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Sat, 28 Jul 2012 10:03:11 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 28 Jul 2012 10:03:12 UTC +00:00], ["time_in", Fri, 27 Jul 2012 10:03:12 UTC +00:00], ["time_out", nil], ["updated_at", Sat, 28 Jul 2012 10:03:12 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 28 Jul 2012 10:03:12 UTC +00:00], ["time_in", Sat, 28 Jul 2012 10:03:12 UTC +00:00], ["time_out", nil], ["updated_at", Sat, 28 Jul 2012 10:03:12 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-28 10:03:12.067610' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Sat, 28 Jul 2012 10:03:12 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.one"], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Sat, 28 Jul 2012 10:03:12 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 28 Jul 2012 10:03:12 UTC +00:00], ["time_in", Fri, 27 Jul 2012 10:03:12 UTC +00:00], ["time_out", Fri, 27 Jul 2012 18:03:12 UTC +00:00], ["updated_at", Sat, 28 Jul 2012 10:03:12 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 28 Jul 2012 10:03:12 UTC +00:00], ["time_in", Sat, 28 Jul 2012 10:03:12 UTC +00:00], ["time_out", nil], ["updated_at", Sat, 28 Jul 2012 10:03:12 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-07-28 10:03:12.067610' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (54.2ms)[0m  [1mINSERT INTO "users" ("birth_date", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "is_active", "joining_date", "last_name", "last_sign_in_at", "last_sign_in_ip", "machine_name", "mobile", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at", "user_name") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", nil], ["created_at", Sun, 12 Aug 2012 06:56:59 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", ""], ["encrypted_password", ""], ["first_name", "test"], ["is_active", nil], ["joining_date", nil], ["last_name", "user"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["machine_name", nil], ["mobile", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Sun, 12 Aug 2012 06:56:59 UTC +00:00], ["user_name", "abc xyz"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 12 Aug 2012 06:56:59 UTC +00:00], ["time_in", Sat, 11 Aug 2012 06:56:59 UTC +00:00], ["time_out", nil], ["updated_at", Sun, 12 Aug 2012 06:56:59 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "attendances" ("created_at", "time_in", "time_out", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 12 Aug 2012 06:56:59 UTC +00:00], ["time_in", Sun, 12 Aug 2012 06:56:59 UTC +00:00], ["time_out", nil], ["updated_at", Sun, 12 Aug 2012 06:56:59 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "attendances" 
+  [1m[36mAttendance Load (0.0ms)[0m  [1mSELECT "attendances".* FROM "attendances" WHERE "attendances"."time_in" = '2012-08-12 06:56:59.660909' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
