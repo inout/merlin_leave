@@ -17,7 +17,6 @@ Merlin::Application.routes.draw do
 
   resources :users
 
-  match 'log/' => 'log/store'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
